@@ -24,7 +24,7 @@ def index():
 @app.route("/webhook", methods=['POST'])
 def webhook():
     if request.method == 'POST':
-        return "OK"
+        return "OK", 200
 
 @app.route('/callb', methods=['POST'])
 def callb():
