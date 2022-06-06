@@ -51,7 +51,7 @@ def callb():
     elif(userText=="ไอ้บ้า"):
         sendText(user,"ไม่บ้านะ")
 
-    return '',200
+    return '', 200
 
 @app.route('/callback', methods=['POST'])
 def callback():
@@ -63,7 +63,7 @@ def callback():
     if(userText=="ถามชื่อ"):
         sendText(user,"น้องฟ้าจ้าาา")
 
-    return '',200
+    return '', 200
 
 def sendText(user, text):
   LINE_API = 'https://api.line.me/v2/bot/message/reply'
